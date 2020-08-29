@@ -4,12 +4,12 @@
     "commit": null
   },
   "libsass": {
-    "version": "3.6.3",
-    "commit": "e1c16e09"
+    "version": "3.6.4",
+    "commit": "8d312a1c"
   },
   "sassjs": {
     "version": "0.11.2",
-    "commit": "86124c4",
+    "commit": "b3ed898",
     "branch": "master"
   }
 }

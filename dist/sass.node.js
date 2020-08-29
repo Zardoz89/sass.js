@@ -1,5 +1,5 @@
-/*! sass.js - v0.11.2 (86124c4) - built 2020-08-29
-  providing libsass 3.6.3 (e1c16e09)
+/*! sass.js - v0.11.2 (b3ed898) - built 2020-08-29
+  providing libsass 3.6.4 (8d312a1c)
   via emscripten 1.39.18 ()
  */
 var Sass = require('./sass.sync.js');
