@@ -28,7 +28,7 @@ cp ./emterpreter_whitelist.json ./libsass/emterpreter_whitelist.json
 EMSCRIPTEN_TAG="sdk-tag-1.39.0-64bit"
 echo "  initializing emscripten"
 if [ "${2:-}" = "debug" ]; then
-  docker run --rm --volume "$(pwd)/libsass:/src" --user="emscripten" trzeci/emscripten:${EMSCRIPTEN_TAG} emmake make js-debug
+  sudo docker run --rm --volume "$(pwd)/libsass:/src" --user="emscripten" trzeci/emscripten:${EMSCRIPTEN_TAG} emmake make js-debug
 else
-  docker run --rm --volume "$(pwd)/libsass:/src" --user="emscripten" trzeci/emscripten:${EMSCRIPTEN_TAG} emmake make js
+  sudo docker run --rm --volume "$(pwd)/libsass:/src" --user="emscripten" trzeci/emscripten:${EMSCRIPTEN_TAG} emmake make js
 fi

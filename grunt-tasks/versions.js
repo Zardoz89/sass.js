@@ -54,7 +54,7 @@ module.exports = function GruntfileVersions(grunt) {
     }
 
     var versions = grunt.config.data.versions;
-    var command = 'docker run --rm trzeci/emscripten:latest emcc --version'
+    var command = 'sudo docker run --rm trzeci/emscripten:latest emcc --version'
     childProcess.exec(command, function(err, stdout, stderr) {
       if (err) {
         grunt.log.error('`' + command + '` failed with: ' + err.code + '\n' + stderr);
